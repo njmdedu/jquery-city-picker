@@ -39,7 +39,11 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="../js/jquery.bs.cncitypicker.js"></script>
     <script>
-      $('#cncity1').cncitypicker();
+      $('#cncity1').cncitypicker({
+        onChangeProvince:function(){
+          alert(1)
+        }
+      });
       $('#cncity2').cncitypicker();
     </script>
   </body>
